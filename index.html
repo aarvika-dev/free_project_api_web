@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Academy Website Concepts</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #09090f;
+      --card: rgba(255,255,255,.08);
+      --text: #f8fafc;
+      --muted: #a7b0c0;
+      --red: #ff3158;
+      --cyan: #31d2ff;
+      --green: #35e6a6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, rgba(255,49,88,.28), transparent 34%),
+                  radial-gradient(circle at bottom right, rgba(49,210,255,.24), transparent 35%), var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 72px 0; }
+    .eyebrow { color: var(--green); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { font-size: clamp(2.4rem, 7vw, 5.8rem); line-height: .95; margin: 18px 0; max-width: 940px; }
+    p { color: var(--muted); font-size: 1.08rem; line-height: 1.75; max-width: 780px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 44px; }
+    .card {
+      min-height: 390px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+      border-radius: 30px;
+      padding: 28px;
+      box-shadow: 0 24px 80px rgba(0,0,0,.32);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+    }
+    .card::after { content: ""; position: absolute; inset: auto -40px -60px auto; width: 170px; height: 170px; border-radius: 50%; filter: blur(2px); opacity: .4; }
+    .card:nth-child(1)::after { background: var(--red); }
+    .card:nth-child(2)::after { background: var(--cyan); }
+    .card:nth-child(3)::after { background: var(--green); }
+    .badge { display: inline-flex; width: max-content; padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,.1); color: #fff; font-size: .78rem; font-weight: 800; }
+    h2 { font-size: 1.7rem; margin: 22px 0 10px; }
+    ul { padding-left: 20px; color: var(--muted); line-height: 1.8; }
+    a.button { position: relative; z-index: 1; display: inline-flex; justify-content: center; align-items: center; text-decoration: none; color: #09090f; background: #fff; border-radius: 16px; padding: 14px 18px; font-weight: 900; }
+    .meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+    .pill { color: #dbeafe; border: 1px solid rgba(255,255,255,.16); padding: 8px 10px; border-radius: 999px; font-size: .82rem; }
+    footer { margin-top: 44px; color: var(--muted); font-size: .92rem; }
+    @media (max-width: 880px) { .grid { grid-template-columns: 1fr; } main { padding-top: 42px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Three complete HTML concepts</div>
+    <h1>Choose a strong, ad-ready developer creator website direction.</h1>
+    <p>Each sample is a full responsive homepage concept for a YouTube educator with videos, blogs, private batches, weekend live sessions, one-to-one interview help, courses, and reusable project APIs. The layouts include publisher-friendly navigation, clear content areas, policy links, and non-intrusive ad placements.</p>
+    <section class="grid" aria-label="Website concept samples">
+      <article class="card">
+        <div>
+          <span class="badge">Sample 01 · Creator Studio</span>
+          <h2>Bold video-first theme</h2>
+          <p>YouTube-style hero slider, dark premium gradients, quick video search, and strong calls to join live cohorts.</p>
+          <div class="meta"><span class="pill">Hero slider</span><span class="pill">Video library</span><span class="pill">Ad slots</span></div>
+        </div>
+        <a class="button" href="sample-1-creator-studio.html">Open Sample 01</a>
+      </article>
+      <article class="card">
+        <div>
+          <span class="badge">Sample 02 · Learning Hub</span>
+          <h2>Clean academy theme</h2>
+          <p>Bright SaaS-inspired academy design with trust metrics, course cards, blogs, projects, and service booking.</p>
+          <div class="meta"><span class="pill">Light UI</span><span class="pill">Courses</span><span class="pill">Mentorship</span></div>
+        </div>
+        <a class="button" href="sample-2-learning-hub.html">Open Sample 02</a>
+      </article>
+      <article class="card">
+        <div>
+          <span class="badge">Sample 03 · API Playground</span>
+          <h2>Developer product theme</h2>
+          <p>Command-center UI focused on project APIs, documentation, search, integrations, and developer credibility.</p>
+          <div class="meta"><span class="pill">API catalog</span><span class="pill">Docs feel</span><span class="pill">Dark neon</span></div>
+        </div>
+        <a class="button" href="sample-3-api-playground.html">Open Sample 03</a>
+      </article>
+    </section>
+    <footer>Prepared as static HTML prototypes so the selected direction can later be converted to Angular, React, or any preferred stack.</footer>
+  </main>
+</body>
+</html>

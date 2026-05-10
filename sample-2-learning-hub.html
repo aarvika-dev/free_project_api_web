@@ -3,22 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learning Hub · Sample 02</title>
-  <style>
-    :root{--ink:#101828;--muted:#667085;--bg:#f7f9fc;--card:#ffffff;--orange:#ff7a1a;--purple:#7047eb;--teal:#00b8a9;--line:#e7ecf4}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.nav{background:rgba(255,255,255,.88);backdrop-filter:blur(18px);position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:15px 0}.brand{font-weight:950;font-size:1.2rem}.brand span{color:var(--orange)}.links{display:flex;gap:20px;color:var(--muted);font-size:.94rem}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:14px;padding:13px 18px;font-weight:900;background:var(--ink);color:#fff}.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line)}.hero{padding:70px 0 38px}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.kicker{display:inline-flex;color:var(--purple);background:#eee9ff;border-radius:999px;padding:8px 12px;font-weight:900;font-size:.82rem}.hero h1{font-size:clamp(2.5rem,6vw,5.6rem);line-height:.96;margin:20px 0}.hero p,.card p,.feature p{color:var(--muted);line-height:1.75}.hero-card{background:linear-gradient(145deg,#fff,#eef7ff);border:1px solid var(--line);border-radius:38px;padding:28px;box-shadow:0 28px 90px rgba(16,24,40,.12)}.video-preview{height:300px;border-radius:30px;background:linear-gradient(135deg,var(--orange),var(--purple));display:grid;place-items:center;color:#fff;font-size:5rem;box-shadow:inset 0 0 0 1px rgba(255,255,255,.22)}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.metric{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px}.metric strong{display:block;font-size:1.6rem}.ad{border:2px dashed #c9d4e5;background:#fff;border-radius:24px;color:#7b8799;display:grid;place-items:center;text-align:center;min-height:110px}.section{padding:42px 0}.head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:20px}h2{font-size:2.4rem;margin:0}.searchbar{display:flex;gap:10px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:8px;width:min(500px,100%)}.searchbar input{border:0;outline:0;flex:1;font:inherit;padding:10px}.searchbar button{border:0;border-radius:12px;background:var(--purple);color:#fff;font-weight:900;padding:0 16px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card,.feature{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:0 18px 55px rgba(16,24,40,.06)}.icon{width:52px;height:52px;border-radius:18px;background:#eefaf8;color:var(--teal);display:grid;place-items:center;font-weight:950;margin-bottom:14px}.course{position:relative;overflow:hidden}.course:before{content:"";position:absolute;inset:0 0 auto;height:7px;background:linear-gradient(90deg,var(--orange),var(--purple),var(--teal))}.price{font-size:1.8rem;font-weight:950;margin:10px 0}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px}.num{width:34px;height:34px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-weight:900}.footer{background:#101828;color:#d0d5dd;margin-top:50px;padding:34px 0}.footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.legal{display:flex;gap:14px;flex-wrap:wrap}@media(max-width:900px){.links{display:none}.hero-grid,.grid,.timeline{grid-template-columns:1fr}.head{display:block}.searchbar{margin-top:16px}.metrics{grid-template-columns:1fr}}
-  </style>
+  <meta name="description" content="A professional developer learning portal for project APIs, YouTube tutorials, source code, blogs, live batches, and interview guidance." />
+  <title>Learning Hub Selected Concept · DevLearningHub</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="nav"><div class="wrap"><a class="brand" href="index.html">Dev<span>Learning</span>Hub</a><div class="links"><a href="#courses">Courses</a><a href="#videos">Videos</a><a href="#blogs">Blogs</a><a href="#services">Services</a><a href="#projects">APIs</a></div><a class="btn" href="#services">Get Guidance</a></div></nav>
-  <main>
-    <section class="hero wrap"><div class="hero-grid"><div><span class="kicker">Fresh learning hub theme</span><h1>One home for tutorials, batches, blogs, and interview success.</h1><p>Designed for a serious developer education brand that wants organic trust, paid traffic readiness, and easy discovery across YouTube lessons, private training, services, and downloadable project APIs.</p><p><a class="btn" href="#courses">Browse learning paths</a> <a class="btn alt" href="#videos">Search free videos</a></p></div><aside class="hero-card"><div class="video-preview">▶</div><div class="metrics"><div class="metric"><strong>50K+</strong>Subscribers</div><div class="metric"><strong>4</strong>Main stacks</div><div class="metric"><strong>Live</strong>Weekends</div></div></aside></div></section>
-    <section class="wrap"><div class="ad">Top responsive ad placement after meaningful introduction content</div></section>
-    <section class="section wrap" id="courses"><div class="head"><div><span class="kicker">Courses & batches</span><h2>Guided learning paths</h2></div></div><div class="grid"><article class="card course"><h3>Angular Job-Ready Batch</h3><p>Live weekend classes with assignments, projects, API integration, and interview questions.</p><div class="price">Weekend</div><a class="btn alt" href="#">See schedule</a></article><article class="card course"><h3>React Practical Projects</h3><p>Learn reusable components, forms, hooks, dashboards, authentication, and deployment.</p><div class="price">Cohort</div><a class="btn alt" href="#">Join waitlist</a></article><article class="card course"><h3>.NET API Bootcamp</h3><p>Build REST APIs with auth, Entity Framework, validations, logging, and clean architecture basics.</p><div class="price">Live</div><a class="btn alt" href="#">View details</a></article></div></section>
-    <section class="section wrap" id="videos"><div class="head"><div><span class="kicker">YouTube library</span><h2>Search video playlists</h2></div><form class="searchbar"><input placeholder="Search by topic, stack, or project name" /><button>Find</button></form></div><div class="grid"><article class="feature"><div class="icon">A</div><h3>Angular tutorials</h3><p>Components, routing, signals, RxJS, forms, auth guards, and backend integration.</p></article><article class="feature"><div class="icon">R</div><h3>React tutorials</h3><p>Hooks, API calls, state, reusable UI, project structure, and interview tasks.</p></article><article class="feature"><div class="icon">N</div><h3>.NET tutorials</h3><p>Controllers, services, repositories, EF Core, JWT, role-based access, and hosting.</p></article></div></section>
-    <section class="section wrap" id="services"><div class="head"><div><span class="kicker">Mentorship services</span><h2>Help developers crack interviews</h2></div></div><div class="timeline"><div class="step"><div class="num">1</div><h3>Profile review</h3><p>Assess current skills, goals, projects, and target role.</p></div><div class="step"><div class="num">2</div><h3>CV preparation</h3><p>Rewrite resume bullets and position projects for recruiter screening.</p></div><div class="step"><div class="num">3</div><h3>Mock interview</h3><p>Practice project explanation, coding questions, and behavioral answers.</p></div><div class="step"><div class="num">4</div><h3>Roadmap</h3><p>Personal plan for learning, building, applying, and follow-up.</p></div></div></section>
-    <section class="section wrap" id="projects"><div class="head"><div><span class="kicker">Project API catalog</span><h2>APIs viewers can use</h2></div></div><div class="grid"><article class="card"><h3>Dashboard Management API</h3><p>Widgets, charts, filters, users, and admin settings for Angular or React dashboards.</p></article><article class="card"><h3>Trade & Booking APIs</h3><p>Order flow, inventory, ticket booking, seat selection, and payment-ready endpoints.</p></article><article class="card"><h3>Employee + Live Tracker</h3><p>HR modules, attendance, location status, reporting, and activity timeline endpoints.</p></article></div></section>
-    <section class="section wrap" id="blogs"><div class="grid"><article class="card"><h3>Latest blog: Prepare for frontend interviews</h3><p>Checklist covering JavaScript, framework fundamentals, API integration, and project storytelling.</p></article><article class="card"><h3>Latest blog: Backend API mistakes</h3><p>How to avoid poor validation, weak auth, unclear error responses, and bad folder structure.</p></article><div class="ad">Sidebar / in-feed native ad placeholder</div></div></section>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><span class="brand-mark">DL</span><span>DevLearningHub</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a aria-current="page" href="index.html">Home</a>
+        <a href="project-apis.html">Project APIs</a>
+        <a href="videos.html">YouTube Videos</a>
+        <a href="source-code.html">Source Code</a>
+        <a href="batches.html">Batches</a>
+        <a href="mentorship.html">Mentorship</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="videos.html">Search Videos</a>
+        <a class="btn btn-primary" href="project-apis.html">Explore APIs</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="kicker">Professional learning portal for 50,000+ developers</span>
+          <h1>Build real projects with APIs, tutorials, and source code in one place.</h1>
+          <p class="lead">This landing page prioritizes the three things visitors will use most: searchable YouTube videos, reusable project APIs, and matching source code. Courses, blogs, live batches, and interview help are available as separate supporting pages.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="project-apis.html">Browse Project APIs</a>
+            <a class="btn btn-secondary" href="videos.html">Find YouTube Tutorials</a>
+            <a class="btn btn-secondary" href="source-code.html">Download Source Code</a>
+          </div>
+          <div class="trust-row" aria-label="Creator metrics">
+            <div class="trust-card"><strong>50K+</strong><span>YouTube subscribers</span></div>
+            <div class="trust-card"><strong>120+</strong><span>Project APIs and demos</span></div>
+            <div class="trust-card"><strong>Live</strong><span>Weekend doubt sessions</span></div>
+          </div>
+        </div>
+        <aside class="hero-product" aria-label="Portal preview">
+          <div class="browser-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>developer-portal/dashboard</span></div>
+          <div class="product-screen">
+            <div class="screen-top"><strong>Learning Dashboard</strong><span>Updated weekly</span></div>
+            <div class="screen-grid">
+              <div class="screen-tile"><strong>Project APIs</strong><span>Employee, tracker, booking, dashboard</span></div>
+              <div class="screen-tile"><strong>Videos</strong><span>Angular, React, .NET playlists</span></div>
+              <div class="screen-tile"><strong>Source Code</strong><span>GitHub links and setup steps</span></div>
+              <div class="screen-tile"><strong>Interview Help</strong><span>CV, mock interview, roadmap</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Advertisement">
+      <div class="ad-slot"><span><span class="ad-label">Advertisement</span>Responsive AdSense slot after original hero content</span></div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="kicker">Main visitor actions</span>
+            <h2>Give learners the fastest path to useful content.</h2>
+          </div>
+          <p>Instead of making visitors search across YouTube, GitHub, blog posts, and comments, the home page routes them directly to the resource they need.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <div class="icon">API</div>
+            <h3>Project API library</h3>
+            <p>Catalog real APIs by domain, tech stack, difficulty, endpoints, video reference, and source-code availability.</p>
+            <a class="btn btn-secondary" href="project-apis.html">Open API Catalog</a>
+          </article>
+          <article class="card">
+            <div class="icon">YT</div>
+            <h3>YouTube video search</h3>
+            <p>Help viewers find tutorials by Angular, React, .NET, interview topic, playlist, project name, or API feature.</p>
+            <a class="btn btn-secondary" href="videos.html">Search Videos</a>
+          </article>
+          <article class="card">
+            <div class="icon">SRC</div>
+            <h3>Project source code</h3>
+            <p>Provide clean source-code cards with GitHub links, setup instructions, prerequisites, and related videos.</p>
+            <a class="btn btn-secondary" href="source-code.html">View Source Code</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-column">
+        <div>
+          <span class="kicker">Landing page content plan</span>
+          <h2>What should stay on the home page?</h2>
+          <p class="lead">The landing page should not become a dumping ground. It should prove trust, highlight top resources, and move learners to focused pages for deeper browsing.</p>
+        </div>
+        <div class="list">
+          <article class="list-item"><div class="list-item-header"><h3>1. Hero with clear value proposition</h3><span class="badge">High priority</span></div><p>Explain that the site combines project APIs, YouTube tutorials, and source code for Angular, React, and .NET learners.</p></article>
+          <article class="list-item"><div class="list-item-header"><h3>2. Search entry points</h3><span class="badge badge-green">Useful</span></div><p>Place quick links for APIs, videos, and source code above the fold so paid visitors immediately know what to do.</p></article>
+          <article class="list-item"><div class="list-item-header"><h3>3. Featured resources</h3><span class="badge badge-orange">Ad-friendly</span></div><p>Show useful original content before ad blocks. This supports a better publisher experience and avoids a page that feels made only for ads.</p></article>
+          <article class="list-item"><div class="list-item-header"><h3>4. Trust and support pages</h3><span class="badge">Required</span></div><p>Keep About, Contact, Privacy Policy, Terms, and Disclaimer visible in the footer for transparency and ad-network review.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="kicker">Featured this week</span>
+            <h2>Show a balanced mix of APIs, videos, and source code.</h2>
+          </div>
+          <div class="section-actions"><a class="btn btn-secondary" href="project-apis.html">All resources</a></div>
+        </div>
+        <div class="resource-grid">
+          <article class="card"><span class="badge">Project API</span><h3>Employee Management API</h3><p>Departments, employees, roles, JWT auth, dashboard-ready reporting, and Angular integration tutorial.</p><code class="endpoint">GET /api/employees</code></article>
+          <article class="card"><span class="badge badge-orange">YouTube Playlist</span><h3>Angular + .NET full project</h3><p>Step-by-step video path for building UI, connecting APIs, adding auth, and preparing interview explanations.</p><div class="meta"><span>Angular</span><span>.NET</span><span>JWT</span></div></article>
+          <article class="card"><span class="badge badge-green">Source Code</span><h3>Bus booking app repository</h3><p>Frontend, backend, database script, environment configuration, and setup checklist in one resource page.</p><div class="meta"><span>React</span><span>Web API</span><span>SQL</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Advertisement">
+      <div class="ad-slot"><span><span class="ad-label">Advertisement</span>In-content responsive ad slot with enough spacing from navigation and buttons</span></div>
+    </section>
+
+    <section class="container cta-band">
+      <div>
+        <h2>Ready for the next implementation phase?</h2>
+        <p>After choosing this professional Learning Hub direction, the next step is to connect your database APIs for videos, projects, source code, blogs, batches, and bookings.</p>
+      </div>
+      <a class="btn btn-primary" href="project-apis.html">Review Page Structure</a>
+    </section>
   </main>
-  <footer class="footer"><div class="wrap"><div>© 2026 DevLearningHub · Original tutorials, blogs, courses, APIs, and mentorship.</div><div class="legal"><a>About</a><a>Contact</a><a>Privacy Policy</a><a>Terms</a><a>Disclaimer</a></div></div></footer>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h3>DevLearningHub</h3><p>Original tutorials, project APIs, source code, blogs, live batches, and interview guidance for developers learning Angular, React, and .NET.</p></div>
+        <div><h3>Resources</h3><a href="project-apis.html">Project APIs</a><a href="videos.html">YouTube Videos</a><a href="source-code.html">Source Code</a><a href="blogs.html">Blogs</a></div>
+        <div><h3>Programs</h3><a href="batches.html">Private Batches</a><a href="mentorship.html">1:1 Mentorship</a><a href="mentorship.html#cv">CV Preparation</a><a href="mentorship.html#interview">Mock Interview</a></div>
+        <div><h3>Legal</h3><a href="#">About</a><a href="#">Contact</a><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Disclaimer</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 DevLearningHub. All rights reserved.</span><span>Ad placements are labeled and separated from editorial content.</span></div>
+    </div>
+  </footer>
 </body>
 </html>
